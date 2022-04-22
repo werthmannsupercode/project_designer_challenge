@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER STYLES */
+
+header {
+    padding: 5vh 6vw 2vh 3vw;
+    position: fixed;
+    z-index: 1;
+    background-color: #FFF;
+    border-bottom-right-radius: 100px;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0b0c17;
+    cursor: pointer;
+}
+
+header a img {
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+}
+
+header a div {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+header a div h1 {
+    font-size: 2.4rem;
+}
+
+header a div p {
+    font-size: 1.4rem;
+}
+
+/* MAIN STYLES */
+
+main section:nth-of-type(1) {
+    background-image: url('../img/ilustracion1.png');
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 30vh 40vw 10vh 10vw;
+    position: relative;
+}
+
+main section:nth-of-type(1) h2 {
+    font-size: 8rem;
+}
+
+main section:nth-of-type(1) p {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin: 3vh 0 17vh 0;
+}
+
+main section:nth-of-type(1) p span img {
+    height: 30px;
+    width: 30px;
+}
+
+main section:nth-of-type(1)>img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    animation-name: freierFall;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes freierFall {
+    0% {
+        top: 0;
+        right: 0;
+    }
+
+    50% {
+        top: 10vh;
+        right: 10vh;
+    }
+
+    100% {
+        top: 0;
+        right: 0;
+    }
+}
+
+main>a {
+    margin-left: 10vw;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #ff3571;
+    display: inline-block;
+    padding-bottom: 17vh;
+}
+
+main section:nth-of-type(2) {
+    background-image: url('../img/images.jpg');
+    background-size: contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+main section:nth-of-type(3) {
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 15vw;
+}
+
+main section:nth-of-type(3) h3 {
+    font-size: 6rem;
+    width: 30vw
+}
+
+main section:nth-of-type(3) p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2;
+    width: 40vw;
+    padding-top: 5vh;
+}
+
+main section:nth-of-type(4) {
+    padding: 10vh 15vw;
+}
+
+main section:nth-of-type(4) h3 {
+    font-size: 6rem;
+    margin: 10vh 19vw 25vh 0;
+}
+
+main section:nth-of-type(4)>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main section:nth-of-type(4) div article {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+    align-items: flex-start;
+}
+
+main section:nth-of-type(4) div article img {
+    width: 40px;
+    padding-right: 10px;
+}
+
+main section:nth-of-type(4) div article div {
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-of-type(4) div article div h4 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+main section:nth-of-type(4) div article div p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2;
+}
+
+main section:nth-of-type(5) {
+    padding-top: 10vh;
+}
+
+main section:nth-of-type(5) h3 {
+    text-align: center;
+    font-size: 6rem;
+}
+
+main section:nth-of-type(5)>p {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 7.5vh 20vw;
+    line-height: 1.5;
+}
+
+main section:nth-of-type(5) article {
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh 5vw;
+}
+
+main section:nth-of-type(5) article img {
+    width: 40vw;
+}
+
+main section:nth-of-type(5) article div {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5vh 0;
+}
+
+main section:nth-of-type(5) article div h5 {
+    color: #dddddd;
+    font-size: 7rem;
+    padding-bottom: 5vh;
+}
+
+main section:nth-of-type(5) article div h4 {
+    font-size: 2rem;
+}
+
+main section:nth-of-type(5) article div p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2;
+}
+
+main section:nth-of-type(5) article div img {
+    width: 50px;
+    height: 50px;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    position: relative;
+}
+
+footer h3 {
+    font-size: 6rem;
+    text-align: center;
+    padding: 10vh 0 5vh 0;
+}
+
+footer p:nth-of-type(1) {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10vh 25vw 20vh 25vw;
+}
+
+footer form input:nth-of-type(1) {
+    color: #dddddd;
+    border-style: none;
+    text-align: center;
+    box-shadow: 0 0 20px #dddddd;
+    font-size: 2.4rem;
+    border-radius: 5px;
+    padding: 3vh 0;
+    margin-bottom: 5vh;
+}
+
+footer form input:nth-of-type(2) {
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff3571;
+    margin: 0 12.5vw;
+    font-size: 2.4rem;
+    padding: 3vh 0;
+    cursor: pointer;
+}
+
+footer p:nth-of-type(2) {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-left: 10vw;
+    margin-bottom: 3vh;
+}
+
+footer p:nth-of-type(2) span img {
+    width: auto;
+    height: 25px;
+}
+
+footer div {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    background-color: white;
+    box-shadow: 0 0 20px #dddddd;
+    border-radius: 10px;
+    padding: 10vh 10vw;
+    text-align: center;
+    width: 80vw;
+    visibility: hidden;
+}
+
+footer div p:nth-of-type(1) {
+    font-size: 3rem;
+}
+
+footer div p:nth-of-type(2),
+footer div p:nth-of-type(3) {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 2;
+}
+
+footer div p:nth-of-type(4) {
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 2vh 0;
+}
+
+footer div button {
+    background-color: #3C30FF;
+    color: #FFF;
+    border-style: none;
+    padding: 2vh 2vw;
+    border-radius: 5px;
+    margin: 5vh 0;
+    cursor: pointer;
+}
