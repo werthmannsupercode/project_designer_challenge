@@ -134,6 +134,10 @@ main>a {
     padding-bottom: 17vh;
 }
 
+main>a:hover {
+    color: #3C30FF;
+}
+
 main section:nth-of-type(2) {
     background-image: url('../img/images.jpg');
     background-size: contain;
@@ -306,6 +310,10 @@ footer form input:nth-of-type(2) {
     cursor: pointer;
 }
 
+footer form input:nth-of-type(2):hover {
+    background-image: linear-gradient(to right, #ff3571, #3C30FF);
+}
+
 footer p:nth-of-type(2) {
     font-size: 1.8rem;
     font-weight: 300;
@@ -357,4 +365,8 @@ footer div button {
     border-radius: 5px;
     margin: 5vh 0;
     cursor: pointer;
+}
+
+footer div button:hover {
+    background-image: linear-gradient(to left, #ff3571, #3C30FF);
 }
