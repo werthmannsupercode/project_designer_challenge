@@ -8,4 +8,5 @@ function dankeFenster() {
 
 function fensterZu() {
     div.style.visibility = "hidden";
+    textFeld.value = '';
 }
